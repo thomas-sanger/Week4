@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lost and Found</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <img
+        src="./images/Lost&Found_logo_225x225.png"
+        width="225"
+        height="225"
+        alt="Lost"
+      />
+      <br />
+      <header>Lost and Found</header>
+      <br />
+      <br />
+      <form onsubmit="submitForm(event)">
+        <div class="form-group">
+          <label id="nameLabel" for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your name" />
+        </div>
+        <br />
+        <div class="form-group">
+          <label id="phoneLabel" for="phone">Phone:</label>
+          <input type="text" id="phone" name="phone" placeholder="Your phone" />
+        </div>
+        <br />
+        <div class="form-group">
+          <label id="descriptionLabel" for="description">Description:</label>
+          <textarea
+            id="description"
+            name="description"
+            rows="2"
+            placeholder="Description"
+          ></textarea>
+        </div>
+        <br />
+        <div class="form-group">
+          <button type="submit" id="submit" onclick="submitForm()">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

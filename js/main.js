@@ -29,7 +29,7 @@ function submitForm(event) {
 
   // Create a new div element
   const messageDiv = document.createElement("div");
-  messageDiv.innerHTML = `Thank you, ${firstName}. Someone will be calling you at ${lostItem.phone} within one business day.`;
+  messageDiv.innerHTML = `Thank you, ${firstName}. Someone will be calling you at ${lostItem.phone} about your ${lostItem.description} within one business day.`;
 
   // Append the new div to the container
   const container = document.getElementById("container");
